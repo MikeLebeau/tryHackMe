@@ -1,0 +1,20 @@
+J'ai par un nmap, j'ai trouvé plusieurs ports
+
+Je me balade sur le site, je trouve le premier flag dans le robots.txt
+Je trouve egalement un autre site 'https://www.whoismrrobot.com/' dans lequel il y a plusieurs connexion (pseudo remote connection)
+
+Dans le robot.txt j'ai trouvé une wordlist fsociety.dic, je pense que ce sera a utilisé pour les bruteforce
+
+Sur le DA_remote il y a besoin d'un password
+
+Sur le premier site il y a possibilité de run la commande 'join' qui me demande une adresse mail, j'ai recu un mail pour confirmer mon adresse
+L'expediteur est: admin@whoismrrobot.com, je sais qu'il y a un admin sur ce site
+
+
+Ports:
+	- 22
+	- 80
+	- 443
+
+Flag:
+	- 1: Dans le robots.txt, du premier site
