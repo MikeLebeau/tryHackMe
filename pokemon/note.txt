@@ -1,0 +1,63 @@
+Dans la console:
+
+0: "Bulbasaur"
+1: "Charmander"
+2: "Squirtle"
+3: "Snorlax"
+4: "Zapdos"
+5: "Mew"
+6: "Charizard"
+7: "Grimer"
+8: "Metapod"
+9: "Magikarp"
+
+Dans le code il y a une balise <pokemon>:<hack_the_pokemon>
+Il faut utiliser ca en tant que creds ssh
+
+Dans le zip /home/pokemon/p0kemon.zip il y a un fichier grassmachin
+
+Pour le 2eme flag,
+-> locate water
+	/usr/bin/intel_watermark
+	/usr/lib/libreoffice/share/config/wizard/form/styles/water.css
+	/usr/lib/libreoffice/share/config/wizard/web/styles/water.css
+	/usr/share/app-install/desktop/gwaterfall:gwaterfall.desktop
+	/usr/share/glib-2.0/schemas/org.compiz.water.gschema.xml
+	/var/www/html/water-type.txt
+
+Pour le 3eme flag
+ locate fire-type
+	/etc/why_am_i_here?/fire-type.txt
+ pokemon@root:/home$ cat /etc/why_am_i_here?/fire-type.txt
+	UDBrM20wbntDaGFybWFuZGVyfQ==
+ pokemon@root:/home$ echo 'UDBrM20wbntDaGFybWFuZGVyfQ==' | base64 -d
+	P0k3m0n{Charmander}
+
+Pour la last flag:
+	Dans le dossier Video de pokemon, on peut trouver un fichier truc.cplusplus
+	Contenant le password de ash,
+	Une fois co avec ash, faire un cat du fichier dans /home
+
+
+find / -perm -4000 2>/dev/null
+/bin/umount
+/bin/ping6
+/bin/ping
+/bin/su
+/bin/fusermount
+/bin/mount
+/usr/bin/sudo
+/usr/bin/passwd
+/usr/bin/chsh
+/usr/bin/gpasswd
+/usr/bin/chfn
+/usr/bin/newgrp
+/usr/bin/pkexec
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/xorg/Xorg.wrap
+/usr/lib/x86_64-linux-gnu/oxide-qt/chrome-sandbox
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/openssh/ssh-keysign
+/usr/lib/snapd/snap-confine
+/usr/lib/policykit-1/polkit-agent-helper-1
+/usr/sbin/pppd
