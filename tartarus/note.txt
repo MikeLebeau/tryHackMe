@@ -1,0 +1,36 @@
+enox:P@ssword1234 pour /sUp3r-s3cr3t
+
+upload un php-reverse
+allez dans /sUp3r-s3cr3t/images/uploads
+
+www-data@ubuntu-xenial:/home$ ls -lhaR
+ls -lhaR
+.:
+total 20K
+drwxr-xr-x  5 root      root      4.0K Jul  5 21:45 .
+drwxr-xr-x 24 root      root      4.0K Aug 25 12:56 ..
+drwxr-xr-x  2 root      root      4.0K Jul  5 21:35 cleanup
+drwxr-xr-x  2 d4rckh    d4rckh    4.0K Jul  5 21:35 d4rckh
+drwxr-xr-x  2 thirtytwo thirtytwo 4.0K Jul  5 21:38 thirtytwo
+
+./cleanup:
+total 8.0K
+drwxr-xr-x 2 root root 4.0K Jul  5 21:35 .
+drwxr-xr-x 5 root root 4.0K Jul  5 21:45 ..
+
+./d4rckh:
+total 16K
+drwxr-xr-x 2 d4rckh d4rckh 4.0K Jul  5 21:35 .
+drwxr-xr-x 5 root   root   4.0K Jul  5 21:45 ..
+-rwxrwxrwx 1 root   root    129 Jul  5 21:45 cleanup.py
+-rw-r--r-- 1 d4rckh d4rckh   33 Jul  5 21:45 user.txt
+
+./thirtytwo:
+total 16K
+drwxr-xr-x 2 thirtytwo thirtytwo 4.0K Jul  5 21:38 .
+drwxr-xr-x 5 root      root      4.0K Jul  5 21:45 ..
+-rw------- 1      1002      1002   56 Jul  5 21:39 .bash_history
+-rwxr-xr-x 1 root      root       143 Jul  5 21:45 note.txt
+
+
+Modifier le fichier d4rckh/cleanup.py et print/copier le /root/root.txt
