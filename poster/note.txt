@@ -1,0 +1,9 @@
+user:
+	dark:qwerty1234#!hackme
+	alison:p4ssw0rdS3cur3!#
+
+
+/etc/init.passwd.conf
+
+/lost+found
+
