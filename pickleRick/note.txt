@@ -1,0 +1,17 @@
+robots.txt:
+-> Wubbalubbadubdub
+
+source code:
+-> Username: R1ckRul3s
+
+GoBuster avec raft-medium-file, trouve /login.php
+
+Je me connecte avec les identifiants au dessus, et la j'ai un webshell
+
+Pour lire les fichiers (y compris les root), je fais la commande suivant:
+-> grep '.*' <fichierQueJeVeuxLire>
+
+Ingredients:
+-> grep '.*' /var/www/html/Sup3rS3cretPickl3Ingred.txt
+-> grep '.*' /home/rick/'second ingredients'
+-> sudo grep '.*' /root/3rd.txt

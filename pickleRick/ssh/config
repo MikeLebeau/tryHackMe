@@ -1,0 +1,5 @@
+Host 10.10.76.31
+Hostname 10.10.76.31
+User R1ckRul3s
+PubKeyAuthentication yes
+IdentityFile .
