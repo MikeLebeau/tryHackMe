@@ -1,0 +1,28 @@
+Premiere clé: dans le robots.txt
+
+gobuster:
+	/0
+	/0000
+
+C'est un wordpress !
+
+[i] User(s) Identified:
+
+[+] mich05654
+ | Found By: Author Id Brute Forcing - Author Pattern (Aggressive Detection)
+
+[+] elliot
+ | Found By: Author Id Brute Forcing - Author Pattern (Aggressive Detection)
+
+
+Avec WPscan on peut bruteforce les users avec la liste fsocity.dic:
+
+[!] Valid Combinations Found:
+ | Username: mich05654, Password: Dylan_2791
+ | Username: elliot, Password: ER28-0652
+
+
+robot:abcdefghijklmnopqrstuvwxyz
+
+En cherchant tout les SUID on trouve un nmap chelou
+En utilisant ce nmap on peut avoir un shell root
