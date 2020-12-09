@@ -1,0 +1,5 @@
+Dans le code de la page d'accueil il y a un message pour john
+
+user:
+	john
+	passphrase: letmein
