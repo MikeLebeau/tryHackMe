@@ -1,0 +1,10 @@
+--2020-11-24 22:51:49--  http://10.10.90.46:8000/suspicious.pcapng
+Connecting to 10.10.90.46:8000... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 31224 (30K) [application/octet-stream]
+Saving to: ‘suspicious.pcapng.1’
+
+     0K .......... .......... ..........                      100%  566K=0,05s
+
+2020-11-24 22:51:49 (566 KB/s) - ‘suspicious.pcapng.1’ saved [31224/31224]
+
