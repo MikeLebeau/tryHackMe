@@ -1,2 +1,4 @@
 *.ovpn
 *.pub
+**/rockyou.txt
+**/hydra.restore
