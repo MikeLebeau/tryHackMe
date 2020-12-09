@@ -1,0 +1,14 @@
+Gobuster:
+index.html (Status: 301)
+/404.html (Status: 200)
+/. (Status: 301)
+/admin.html (Status: 200)
+/main.css (Status: 200)
+/main.js (Status: 200)
+
+/img (Status: 301)
+/downloads (Status: 301)
+/aboutus (Status: 301)
+/admin (Status: 301)
+/css (Status: 301)
+
