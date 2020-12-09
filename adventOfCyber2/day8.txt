@@ -1,0 +1,10 @@
+Date de sortie de Snort: 1998 d'apres wikipédia
+
+Nmap commande:
+	nmap -sV -sC -O -On nmap.txt -p- <ipDeLaMachine>
+
+Il n'y a pas de match avec un OS, 
+par contre on peut voir dans la version des outils (voir la section des ports trouvés)
+
+Dans la section des ports trouvés on voit le titre du site
+

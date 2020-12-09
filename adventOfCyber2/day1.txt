@@ -1,0 +1,9 @@
+Se creer un compte
+Se connecter
+Checker les cookies => le cookie 'auth'
+Chiffrer en Hexadecimal, en decodant on a '{"company":"The Best Festival Company", "username":"lolilol"}'
+Si on change la valeur de username pour 'santa' et qu'on encode le tout en Hexadecimal
+Nous avons '7b22636f6d70616e79223a22546865204265737420466573746976616c20436f6d70616e79222c2022757365726e616d65223a2273616e7461227d'
+
+Il nous suffit de remplacer le cookie dans le navigateur et de rafraichir la page et nous voila Santa
+Activer tout les trucs et le flag apparaitra

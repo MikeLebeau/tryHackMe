@@ -1,0 +1,7 @@
+Type of file => image
+Folder => /uploads/
+
+Pour uploader un reverse shell => Il faut renommer un fichier .php en .png.php
+Exemple: php-reverse-shell.php to php-reverse-shell.png.php
+
+Flag dans /var/www/flag.txt

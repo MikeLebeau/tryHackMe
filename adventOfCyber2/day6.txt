@@ -1,0 +1,1 @@
+Tu peux faire une attaque xss dans la recherche ansi que dans le texte

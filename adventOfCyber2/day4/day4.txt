@@ -1,0 +1,9 @@
+Wfuzz command:
+wfuzz -c -z file,../../../SecLists/Discovery/Web-Content/big.txt http://shibes.xyz/api.php\?breed\=FUZZ 
+
+
+Gobuster command:
+gobuster dir -u http://10.10.77.204 -w ../../../SecLists/Discovery/Web-Content/big.txt
+
+Wfuzz command:
+wfuzz -z file,wordlist http://10.10.77.204/api/site-log.php\?date\=FUZZ
