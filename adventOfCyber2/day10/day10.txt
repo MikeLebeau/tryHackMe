@@ -1,0 +1,9 @@
+commands:
+	enum4linux.pl -U <IpCible>
+	-> Retourne le nombre de user
+
+	enum4linux.pl -S <IpCible>
+	-> Retourne le nombre de share dispo
+
+	smbclient //<IpCible>/<ShareDispo>
+	-> Nous connecte au share (Dans lequel on va trouver un fichier laissé par ElfMcSkidy pour Santa)
