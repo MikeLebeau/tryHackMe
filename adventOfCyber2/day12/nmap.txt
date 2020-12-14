@@ -1,0 +1,17 @@
+# Nmap 7.91 scan initiated Sat Dec 12 20:15:54 2020 as: nmap -sV -sC -O -Pn -oN nmap.txt 10.10.121.135
+Nmap scan report for 10.10.121.135
+Host is up (0.034s latency).
+Not shown: 999 filtered ports
+PORT     STATE SERVICE VERSION
+8009/tcp open  ajp13   Apache Jserv (Protocol v1.3)
+| ajp-methods: 
+|_  Supported methods: GET HEAD POST OPTIONS
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: specialized|general purpose
+Running (JUST GUESSING): AVtech embedded (87%), Microsoft Windows XP (85%)
+OS CPE: cpe:/o:microsoft:windows_xp::sp3
+Aggressive OS guesses: AVtech Room Alert 26W environmental monitor (87%), Microsoft Windows XP SP3 (85%)
+No exact OS matches for host (test conditions non-ideal).
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Dec 12 20:17:14 2020 -- 1 IP address (1 host up) scanned in 80.13 seconds
