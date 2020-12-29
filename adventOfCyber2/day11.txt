@@ -1,0 +1,5 @@
+Une escalation verticale
+
+C'est dans le fichier sudoers qu'il y a la liste des dude sudoisable
+
+bash -p

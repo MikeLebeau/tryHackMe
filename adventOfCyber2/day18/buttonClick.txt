@@ -1,0 +1,29 @@
+private unsafe void buttonActivate_Click(object sender, EventArgs e)
+{
+	IntPtr value = Marshal.StringToHGlobalAnsi(textBoxKey.Text);
+	sbyte* ptr = (sbyte*)System.Runtime.CompilerServices.Unsafe.AsPointer(ref <Module>.??_C@_0BB@IKKDFEPG@santapassword321@);
+	void* ptr2 = (void*)value;
+	byte b = *(byte*)ptr2;
+	byte b2 = 115;
+	if ((uint)b >= 115u)
+	{
+		while ((uint)b <= (uint)b2)
+		{
+			if (b != 0)
+			{
+				ptr2 = (byte*)ptr2 + 1;
+				ptr++;
+				b = *(byte*)ptr2;
+				b2 = (byte)(*ptr);
+				if ((uint)b < (uint)b2)
+				{
+					break;
+				}
+				continue;
+			}
+			MessageBox.Show("Welcome, Santa, here's your flag thm{046af}", "That's the right key!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+			return;
+		}
+	}
+	MessageBox.Show("Uh Oh! That's the wrong key", "You're not Santa!", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+}

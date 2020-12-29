@@ -1,0 +1,14 @@
+Ptit nmap pour trouver le port
+	nmap <ipTarget>
+
+On se doute que pour un dossier API sera 
+	/api/
+
+
+J'ai d'abord tenté l'url 'http://<ipTarget>/api/santa'
+Ce qui retourne l'erreur suivante:
+	{"detail":[{"loc":["path","item_id"],"msg":"value is not a valid integer","type":"type_error.integer"}]}
+
+Du coup on sait qu'un entier est attendu en tant que path param
+
+En faisant un ptit script python qui brute force (valeur entre 0 et 100)
